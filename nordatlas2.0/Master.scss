@@ -1,0 +1,41 @@
+@import "./_Functions.scss";
+@import "./_Variables.scss";
+*{
+    margin: 0px;
+    border: 0px;
+}
+body{
+    background-color: whitesmoke;
+}
+
+.Header{
+   @include header();
+}
+
+.Meny{
+    @include Meny();
+}
+
+.Menysamling {
+    @include Samling();
+  }
+  
+  .Meny {
+    @include Menyn();
+    h2{
+        @include Menytext();
+    }
+  }
+
+.Bilder{
+    @include ThreePictures(); 
+} 
+.Brödtext{
+    @include Brödtextruta();
+}
+.Video{
+    @include Video();
+}
+.Footer{
+    @include Footer();
+}
