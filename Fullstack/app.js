@@ -8,13 +8,10 @@ const clientDir = __dirname + "\\client\\"
 
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(express.static(clientDir));
 
 app.get('/', (req, res) => {
-  res.sendFile(clientDir + "index.ejs")
-})
-
-app.get('/stilen', (req, res) => {
-  res.sendFile(clientDir + ".css")
+  res.render(clientDir + "index.ejs")
 })
 
 app.post('/', async (req, res) => {

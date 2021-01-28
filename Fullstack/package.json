@@ -4,13 +4,14 @@
   "description": "BrUh!",
   "main": "app.js",
   "scripts": {
-    "bruh": "nodemon app.js",
+    "main": "nodemon app.js",
     "start": "node app.js"
   },
   "keywords": [],
   "author": "Oskar",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.13"
   },
