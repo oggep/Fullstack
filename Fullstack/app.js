@@ -20,6 +20,8 @@ app.post('/', async (req, res) => {
 
   console.log(req.body.name);
   console.log(req.body.text);
+  console.log(req.body.age);
+
   res.redirect('/')
 })
 
