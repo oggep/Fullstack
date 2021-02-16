@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const storageSchema = new mongoose.Schema({
     name: String,
     text: String,
-    age: Int32Array,
+    age: Number,
     
   });
   
@@ -17,4 +17,9 @@ const storageSchema = new mongoose.Schema({
          });
          
          return storage;
+    }
+
+    exports.nameStorage = async () => {
+        return await Storage.find({})
+
     }

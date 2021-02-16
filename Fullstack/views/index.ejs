@@ -66,6 +66,13 @@
           <li class="nav-item active">
               <a class="nav-link" href="#">DJ USA +1,1%</a>
           </li>
+          <div class="ejs"> <% for( let i=0; i < names.length; i++) { %> 
+            <div class="nav-item active">
+              <li>
+                <a class="nav-link" href="#"><%= names[i].name %></a>
+              </li>
+          </div>
+          <% } %>
         </ul>
       </nav>
     </div>
@@ -87,7 +94,7 @@
           <div class="modal-header">
             <form action="/" method="post">
               <input type="text" name="name" placeholder="Namn">
-              <input type="text" name="Text" placeholder="Lösenord">
+              <input type="text" name="text" placeholder="Lösenord">
               <input type="number" name="age" placeholder="Ålder">
               <button type="submit">Okej</button>
           </form>
